@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS chatorta;
+
+USE chatorta;
+
+CREATE TABLE IF NOT EXISTS user_admin (
+	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	user VARCHAR(50) NOT NULL,
+	password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS user_controls (
+	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	name varchar(50) NOT NULL,
+	log date
+);
+
+SHOW TABLES;
+
+describe user_admin;
